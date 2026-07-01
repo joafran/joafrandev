@@ -27,21 +27,12 @@ export const metadata: Metadata = {
     siteName: siteMetadata.siteName,
     locale: siteMetadata.locale,
     type: "website",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Joaquin Franco",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteMetadata.title.default,
     site: baseUrl,
     description: siteMetadata.description,
-    images: ["/og-image.png"],
   },
   description: siteMetadata.description,
   keywords: [
