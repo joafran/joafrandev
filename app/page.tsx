@@ -13,6 +13,8 @@ import {
   Text,
 } from "@radix-ui/themes";
 import Link from "next/link";
+import Services from "./_components/services";
+import Footer from "./_components/footer";
 
 const posts = [
   {
@@ -31,34 +33,29 @@ const posts = [
 
 export default function Home() {
   return (
-    <section className="max-w-2xl mx-auto px-8 py-16">
+    <div className="max-w-2xl mx-auto px-8 py-12 space-y-16">
       <Flex direction="column" gap="6">
         <Flex align="center" gap="4">
           <Avatar size="8" src="/avatar.png" fallback="JF" />
 
           <Box>
-            <Heading size="6" weight="medium">
+            <Heading size={{ initial: "6", md: "7" }} weight="medium">
               Joaquin Franco
             </Heading>
 
             <Text color="gray">Software Developer</Text>
-            <div className="w-fit px-4 py-2 rounded-xl border border-neutral-200 text-sm text-neutral-500 leading-1.5 tracking-tight flex items-center gap-2 mt-2">
-              <span className="size-2 rounded-full bg-emerald-400 " />
+            <div className="w-fit px-4 py-2 rounded-xl border border-neutral-200 text-xs text-neutral-500 leading-1.5 tracking-tight flex items-center gap-2 mt-2">
+              <span className="size-2 rounded-full bg-emerald-400" />
               Available
             </div>
           </Box>
         </Flex>
 
         <Box>
-          <Text size="3" color="gray" className="mt-6 leading-7">
-            I work with startups, agencies and small businesses to build
-            customer-facing web applications.
-          </Text>
-          <br />
-
-          <Text size="3" color="gray" className="mt-4 leading-7">
-            Available for freelance projects and long-term product
-            collaborations.
+          <Text size="3" className="mt-6 text-stone-600 ">
+            With over 4 years of experience, I help startups, agencies, and
+            small businesses build modern websites, web applications, and SaaS
+            products.
           </Text>
         </Box>
 
@@ -96,21 +93,16 @@ export default function Home() {
         <Box>
           <Flex justify="between" align="center" mb="5">
             <Heading size="4" weight="medium">
-              Latest Articles
+              Services
             </Heading>
 
             <Link href="https://medium.com/@yourusername">View all</Link>
           </Flex>
 
-          <Flex direction="column" gap="4">
-            {posts.map((post) => (
-              <Link key={post.title} href={post.href} className="block">
-                {post.title}
-              </Link>
-            ))}
-          </Flex>
+          <Services />
         </Box>
       </Flex>
-    </section>
+      <Footer />
+    </div>
   );
 }
