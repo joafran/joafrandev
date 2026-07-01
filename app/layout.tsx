@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/avatar.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Joaquin Franco",
