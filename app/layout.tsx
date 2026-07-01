@@ -36,6 +36,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: siteMetadata.title.default,
+    site: baseUrl,
+    description: siteMetadata.description,
+    images: ["/og-image.png"],
+  },
   description: siteMetadata.description,
   keywords: [
     "Software Developer",
