@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: siteMetadata.title,
   authors: [{ name: author.name, url: baseUrl }],
+  icons: [
+    {
+      url: "/favicon.ico",
+      href: "/favicon.ico",
+    },
+  ],
   openGraph: {
     title: siteMetadata.title.default,
     description: siteMetadata.description,
@@ -21,6 +27,14 @@ export const metadata: Metadata = {
     siteName: siteMetadata.siteName,
     locale: siteMetadata.locale,
     type: "website",
+    images: [
+      {
+        url: "/avatar.png",
+        width: 1200,
+        height: 630,
+        alt: "Joaquin Franco",
+      },
+    ],
   },
   description: siteMetadata.description,
   keywords: [
