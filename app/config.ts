@@ -2,7 +2,7 @@ const email = "joafran0016@gmail.com";
 const description = "Software Developer helping startups and businesses build user-friendly web applications. Specialized in React, Next.js, TypeScript.";
 
 export const siteMetadata = {
-    url: "https://joafrandev.vercel.com",
+    url: "https://joafrandev.vercel.app",
     author: {
         name: "Joaquin Franco",
         role: "Software Developer",
