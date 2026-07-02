@@ -49,18 +49,6 @@ export const metadata: Metadata = {
     description: siteMetadata.description,
   },
   description: siteMetadata.description,
-  keywords: [
-    "Software Developer",
-    "Full Stack Developer",
-    "Frontend Development",
-    "Frontend Developer",
-    "Next.js",
-    "React",
-    "TypeScript",
-    "Node.js",
-    "Web Development",
-    "Software Engineering",
-  ],
 };
 
 export default function RootLayout({
