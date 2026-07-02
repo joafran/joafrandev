@@ -27,13 +27,25 @@ export const metadata: Metadata = {
     siteName: siteMetadata.siteName,
     locale: siteMetadata.locale,
     type: "website",
-    images: ["/opengraph-image.png"],
+    images: [
+      {
+        url: `${baseUrl}/opengraph-image.png`,
+        width: 800,
+        height: 600,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteMetadata.title.default,
     site: baseUrl,
-    images: ["/opengraph-image.png"],
+    images: [
+      {
+        url: `${baseUrl}/opengraph-image.png`,
+        width: 800,
+        height: 600,
+      },
+    ],
     description: siteMetadata.description,
   },
   description: siteMetadata.description,
