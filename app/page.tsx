@@ -16,21 +16,6 @@ import Link from "next/link";
 import Services from "./_components/services";
 import Footer from "./_components/footer";
 
-const posts = [
-  {
-    title: "Building Better Forms with React Hook Form and Zod",
-    href: "#",
-  },
-  {
-    title: "A Practical Guide to Data Fetching in Next.js",
-    href: "#",
-  },
-  {
-    title: "How I Structure Frontend Projects with TypeScript",
-    href: "#",
-  },
-];
-
 export default function Home() {
   return (
     <div className="max-w-2xl mx-auto px-8 py-12 space-y-16">
